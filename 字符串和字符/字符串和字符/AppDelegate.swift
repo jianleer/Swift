@@ -39,7 +39,65 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         println("changString\(changString)")
         changString += "shenMeGui"
         println("changString \(changString)")
+
+//       3 字符串遍历  每一个字符值代表一个 Unicode 字符  可用for循环遍历
+        for Character in  changString{
+            println(Character)
+        }
         
+        let yenSign:Character = "￥"
+        println(yenSign)
+        
+        
+//       4 获取该字符串的字符数量
+        let unusualMengerie = "Koala ?????,Snai ????,Penguin ????,Dromedary ????"
+        println("unusalMeagerie has \(countElements(unusualMengerie)) characters")
+        
+        
+//       5 比较字符串  Swift 提供了三种方式来比较字符串的值：字符串相等，前缀相等和后缀相等。
+        let string1 = "apple watch"
+        let string2 = "google watch"
+        let string3 = "apple pay"
+        let string4 = "apple pay"
+//        字符串相等
+        if string3 == string4 {
+            println("string3 is equal string4")
+        }
+        
+        if  string1.hasPrefix("apple"){
+            println("前缀是apple")
+        }
+        
+        if string2.hasSuffix("watch"){
+            println("后缀是watch")
+        }
+        
+//        字符串串大小写转换
+        let normalString = "No Zuo No Die"
+        let daXie = normalString.uppercaseString
+        println("大写 : \(daXie)")
+        let xiaoXie = normalString.lowercaseString
+        println("小写 : \(xiaoXie)")
+        
+//        Unicode
+        let dogString = "Dog!???"
+//        6 UTF-8
+        for  codeUnit in dogString.utf8{
+            println("8 :\(codeUnit)")
+        }
+        println("\n")
+//        UTF16
+        for UTF16String in dogString.utf16{
+            println("16 : \(UTF16String)")
+        }
+//        Unicode标量(Scalars)
+        for scalar in dogString.unicodeScalars{
+            println("scalar.value :\(scalar.value)")
+        }
+        
+        for scalar in dogString.unicodeScalars{
+            println("scalar :\(scalar)")
+        }
         
         return true
     }
