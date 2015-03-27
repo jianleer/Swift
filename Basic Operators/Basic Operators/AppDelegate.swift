@@ -16,6 +16,81 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+//        1 赋值运算
+        let b = 10
+        var a = 5
+        a = b//现在a = 10
+//        元组
+        let (x,y) = (1,2)
+        println("x:\(x),y:\(y)")
+        
+        
+        let dog :String = "d"
+        let cat :String = "c"
+        let dogcat = dog + cat
+        println(dogcat)
+        
+        
+        
+//        2 自增与自增运算
+        var a1 = 0
+        let b1 = ++a1;println("a1:\(a1) b1:\(b1)")
+        let c1 = a1++;println("a1:\(a1) c1:\(c1)")
+
+//    数值的正负号可以使用前缀 - (即单目负号) 来切换:
+//        3 单目负号
+        let three = 3
+        let minusThree = -three
+        println("minusThree:\(minusThree)")
+        let plusThree = -minusThree
+        println("plusThree : \(plusThree)")
+        
+        
+//        4 复合赋值
+        var a2 = 1
+        a2 += 2
+        println(a2)
+        
+//        5 三木运算
+//        a?b:c
+        
+//        6 区间运算
+//        闭区间
+        for index in 1...5{
+            println(index)
+        }
+//        半闭区间
+        for m in 1..<5
+        {
+            println(m)
+        }
+        
+        
+//        逻辑运算
+//        逻辑运算的操作对象是逻辑布尔值. Swift支持基于C语言的三个标准逻辑运算.
+//            
+//        逻辑非 !a
+        let test = false
+        if !test{
+            println("123")
+        }
+//        逻辑与 a && b
+        let test2 = false
+        let test3 = true
+        if test2 && test3{
+            println("hi")
+        }else
+        {
+            println("kkkkk")
+        }
+//        逻辑或 a || b
+        
+        
+        
+        
         return true
     }
 
