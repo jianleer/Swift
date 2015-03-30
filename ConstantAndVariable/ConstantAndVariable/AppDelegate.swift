@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*
         冒号代表 是...类型       swift会自动类型推断,不一定要写类型标注
         */
-        welcome = "Heelo"
+        welcome = "Hello"
         
 //      3  常量变量的命名
         let pi = 3.1415926
