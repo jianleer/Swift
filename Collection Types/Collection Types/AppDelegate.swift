@@ -157,7 +157,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ////        var em = Dictionary()  //
 //        var nameofinteger = Dictionary()
 //        nameofinteger[16] = "sixteen"
-//        println(nam)
         
         
         return true
